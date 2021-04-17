@@ -42,5 +42,10 @@ public class DummyTest {
 	}
 	
 	
+	@Test(groups="side")
+	public void m6()
+	{
+		System.out.println("am in m6");
+	}
 	
 }
