@@ -48,4 +48,10 @@ public class DummyTest {
 		System.out.println("am in m6");
 	}
 	
+	@Test(groups="side")
+	public void m7()
+	{
+		System.out.println("am in m7");
+	}
+	
 }
