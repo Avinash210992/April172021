@@ -25,6 +25,13 @@ public class DummyTest {
 	}
 	
 	
+
+	@Test(groups="side")
+	public void m4()
+	{
+		System.out.println("am in m4");
+	}
+	
 	
 	
 	
