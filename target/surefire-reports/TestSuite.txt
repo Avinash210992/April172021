@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.374 s <<< FAILURE! - in TestSuite
+Framework.E2ETesting.WorkingTest.dealChocolate  Time elapsed: 2.97 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at Framework.E2ETesting.WorkingTest.dealChocolate(WorkingTest.java:92)
+
