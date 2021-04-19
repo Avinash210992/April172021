@@ -15,7 +15,7 @@ String urlObt;
 	public WebDriver browser() throws IOException
 	{
 		Properties p= new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\DELL\\eclipse-workspace2\\E2ETesting\\Resources\\configBasics.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\DELL\\GitApr17admin\\src\\main\\java\\resources\\configBasics.properties");
 		p.load(fis);
 		String url = p.getProperty("url");
 		String browserName = p.getProperty("browser");

@@ -1,32 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="17" passed="16" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-17T20:26:22 IST" name="Framework.E2ETesting.DummyTest" finished-at="2021-04-17T20:26:22 IST" duration-ms="61">
+  <suite started-at="2021-04-19T16:57:25 IST" name="Suite1 (0)" finished-at="2021-04-19T16:57:25 IST" duration-ms="71">
     <groups>
       <group name="side">
-        <method signature="DummyTest.m2()[pri:0, instance:Framework.E2ETesting.DummyTest@4148db48]" name="m2" class="Framework.E2ETesting.DummyTest"/>
-        <method signature="DummyTest.m3()[pri:0, instance:Framework.E2ETesting.DummyTest@4148db48]" name="m3" class="Framework.E2ETesting.DummyTest"/>
+        <method signature="CheckTest.c2()[pri:0, instance:Framework.E2ETesting.CheckTest@25f4878b]" name="c2" class="Framework.E2ETesting.CheckTest"/>
+        <method signature="CheckTest.c3()[pri:0, instance:Framework.E2ETesting.CheckTest@25f4878b]" name="c3" class="Framework.E2ETesting.CheckTest"/>
+        <method signature="DummyTest.m2()[pri:0, instance:Framework.E2ETesting.DummyTest@4e423aa2]" name="m2" class="Framework.E2ETesting.DummyTest"/>
+        <method signature="DummyTest.m3()[pri:0, instance:Framework.E2ETesting.DummyTest@4e423aa2]" name="m3" class="Framework.E2ETesting.DummyTest"/>
+        <method signature="DummyTest.m4()[pri:0, instance:Framework.E2ETesting.DummyTest@4e423aa2]" name="m4" class="Framework.E2ETesting.DummyTest"/>
+        <method signature="ValidateTest.vt2()[pri:0, instance:PackageB.ValidateTest@341814d3]" name="vt2" class="PackageB.ValidateTest"/>
+        <method signature="ValidateTest.vt3()[pri:0, instance:PackageB.ValidateTest@341814d3]" name="vt3" class="PackageB.ValidateTest"/>
       </group> <!-- side -->
       <group name="main">
-        <method signature="DummyTest.m1()[pri:0, instance:Framework.E2ETesting.DummyTest@4148db48]" name="m1" class="Framework.E2ETesting.DummyTest"/>
+        <method signature="CheckTest.c1()[pri:0, instance:Framework.E2ETesting.CheckTest@25f4878b]" name="c1" class="Framework.E2ETesting.CheckTest"/>
+        <method signature="DummyTest.m1()[pri:0, instance:Framework.E2ETesting.DummyTest@4e423aa2]" name="m1" class="Framework.E2ETesting.DummyTest"/>
+        <method signature="ValidateTest.vt1()[pri:0, instance:PackageB.ValidateTest@341814d3]" name="vt1" class="PackageB.ValidateTest"/>
       </group> <!-- main -->
     </groups>
-    <test started-at="2021-04-17T20:26:22 IST" name="Command line test" finished-at="2021-04-17T20:26:22 IST" duration-ms="61">
+    <test started-at="2021-04-19T16:57:25 IST" name="Test1" finished-at="2021-04-19T16:57:25 IST" duration-ms="32">
+      <class name="Framework.E2ETesting.CheckTest">
+        <test-method signature="c1()[pri:0, instance:Framework.E2ETesting.CheckTest@25f4878b]" started-at="2021-04-19T16:57:25 IST" name="c1" finished-at="2021-04-19T16:57:25 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c1 -->
+        <test-method signature="c2()[pri:0, instance:Framework.E2ETesting.CheckTest@25f4878b]" started-at="2021-04-19T16:57:25 IST" name="c2" finished-at="2021-04-19T16:57:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c2 -->
+        <test-method signature="c3()[pri:0, instance:Framework.E2ETesting.CheckTest@25f4878b]" started-at="2021-04-19T16:57:25 IST" name="c3" finished-at="2021-04-19T16:57:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c3 -->
+      </class> <!-- Framework.E2ETesting.CheckTest -->
       <class name="Framework.E2ETesting.DummyTest">
-        <test-method signature="m1()[pri:0, instance:Framework.E2ETesting.DummyTest@4148db48]" started-at="2021-04-17T20:26:22 IST" name="m1" finished-at="2021-04-17T20:26:22 IST" duration-ms="6" status="PASS">
+        <test-method signature="m1()[pri:0, instance:Framework.E2ETesting.DummyTest@4e423aa2]" started-at="2021-04-19T16:57:25 IST" name="m1" finished-at="2021-04-19T16:57:25 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- m1 -->
-        <test-method signature="m2()[pri:0, instance:Framework.E2ETesting.DummyTest@4148db48]" started-at="2021-04-17T20:26:22 IST" name="m2" finished-at="2021-04-17T20:26:22 IST" duration-ms="0" status="PASS">
+        <test-method signature="m2()[pri:0, instance:Framework.E2ETesting.DummyTest@4e423aa2]" started-at="2021-04-19T16:57:25 IST" name="m2" finished-at="2021-04-19T16:57:25 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- m2 -->
-        <test-method signature="m3()[pri:0, instance:Framework.E2ETesting.DummyTest@4148db48]" started-at="2021-04-17T20:26:22 IST" name="m3" finished-at="2021-04-17T20:26:22 IST" duration-ms="0" status="PASS">
+        <test-method signature="m3()[pri:0, instance:Framework.E2ETesting.DummyTest@4e423aa2]" started-at="2021-04-19T16:57:25 IST" name="m3" finished-at="2021-04-19T16:57:25 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- m3 -->
+        <test-method signature="m4()[pri:0, instance:Framework.E2ETesting.DummyTest@4e423aa2]" started-at="2021-04-19T16:57:25 IST" name="m4" finished-at="2021-04-19T16:57:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m4 -->
       </class> <!-- Framework.E2ETesting.DummyTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Framework.E2ETesting.DummyTest -->
+    </test> <!-- Test1 -->
+    <test started-at="2021-04-19T16:57:25 IST" name="Test2" finished-at="2021-04-19T16:57:25 IST" duration-ms="8">
+      <class name="PackageB.ValidateTest">
+        <test-method signature="vt1()[pri:0, instance:PackageB.ValidateTest@341814d3]" started-at="2021-04-19T16:57:25 IST" name="vt1" finished-at="2021-04-19T16:57:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vt1 -->
+        <test-method signature="vt2()[pri:0, instance:PackageB.ValidateTest@341814d3]" started-at="2021-04-19T16:57:25 IST" name="vt2" finished-at="2021-04-19T16:57:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vt2 -->
+        <test-method signature="vt3()[pri:0, instance:PackageB.ValidateTest@341814d3]" started-at="2021-04-19T16:57:25 IST" name="vt3" finished-at="2021-04-19T16:57:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vt3 -->
+      </class> <!-- PackageB.ValidateTest -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite1 (0) -->
+  <suite started-at="2021-04-19T16:57:13 IST" name="Suite1" finished-at="2021-04-19T16:57:25 IST" duration-ms="12062">
+    <groups>
+      <group name="side">
+        <method signature="DummyTest.m2()[pri:0, instance:Framework.E2ETesting.DummyTest@31d7b7bf]" name="m2" class="Framework.E2ETesting.DummyTest"/>
+        <method signature="DummyTest.m3()[pri:0, instance:Framework.E2ETesting.DummyTest@31d7b7bf]" name="m3" class="Framework.E2ETesting.DummyTest"/>
+        <method signature="DummyTest.m4()[pri:0, instance:Framework.E2ETesting.DummyTest@31d7b7bf]" name="m4" class="Framework.E2ETesting.DummyTest"/>
+      </group> <!-- side -->
+      <group name="main">
+        <method signature="WorkingTest.callBrowser()[pri:1, instance:Framework.E2ETesting.WorkingTest@1f0f1111]" name="callBrowser" class="Framework.E2ETesting.WorkingTest"/>
+        <method signature="WorkingTest.dealChocolate()[pri:3, instance:Framework.E2ETesting.WorkingTest@1f0f1111]" name="dealChocolate" class="Framework.E2ETesting.WorkingTest"/>
+        <method signature="WorkingTest.signIN(java.lang.String,java.lang.String)[pri:2, instance:Framework.E2ETesting.WorkingTest@1f0f1111]" name="signIN" class="Framework.E2ETesting.WorkingTest"/>
+        <method signature="DummyTest.m1()[pri:0, instance:Framework.E2ETesting.DummyTest@31d7b7bf]" name="m1" class="Framework.E2ETesting.DummyTest"/>
+      </group> <!-- main -->
+    </groups>
+    <test started-at="2021-04-19T16:57:13 IST" name="Test1" finished-at="2021-04-19T16:57:25 IST" duration-ms="12003">
+      <class name="Framework.E2ETesting.WorkingTest">
+        <test-method signature="callBrowser()[pri:1, instance:Framework.E2ETesting.WorkingTest@1f0f1111]" started-at="2021-04-19T16:57:13 IST" name="callBrowser" finished-at="2021-04-19T16:57:20 IST" duration-ms="6829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- callBrowser -->
+        <test-method signature="signIN(java.lang.String,java.lang.String)[pri:2, instance:Framework.E2ETesting.WorkingTest@1f0f1111]" started-at="2021-04-19T16:57:20 IST" name="signIN" finished-at="2021-04-19T16:57:22 IST" duration-ms="1783" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8939756308]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8939756308]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIN -->
+        <test-method signature="dealChocolate()[pri:3, instance:Framework.E2ETesting.WorkingTest@1f0f1111]" started-at="2021-04-19T16:57:22 IST" name="dealChocolate" finished-at="2021-04-19T16:57:25 IST" duration-ms="3308" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at Framework.E2ETesting.WorkingTest.dealChocolate(WorkingTest.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dealChocolate -->
+      </class> <!-- Framework.E2ETesting.WorkingTest -->
+    </test> <!-- Test1 -->
+    <test started-at="2021-04-19T16:57:25 IST" name="Test2" finished-at="2021-04-19T16:57:25 IST" duration-ms="5">
+      <class name="Framework.E2ETesting.DummyTest">
+        <test-method signature="m1()[pri:0, instance:Framework.E2ETesting.DummyTest@31d7b7bf]" started-at="2021-04-19T16:57:25 IST" name="m1" finished-at="2021-04-19T16:57:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m1 -->
+        <test-method signature="m2()[pri:0, instance:Framework.E2ETesting.DummyTest@31d7b7bf]" started-at="2021-04-19T16:57:25 IST" name="m2" finished-at="2021-04-19T16:57:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2 -->
+        <test-method signature="m3()[pri:0, instance:Framework.E2ETesting.DummyTest@31d7b7bf]" started-at="2021-04-19T16:57:25 IST" name="m3" finished-at="2021-04-19T16:57:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m3 -->
+        <test-method signature="m4()[pri:0, instance:Framework.E2ETesting.DummyTest@31d7b7bf]" started-at="2021-04-19T16:57:25 IST" name="m4" finished-at="2021-04-19T16:57:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m4 -->
+      </class> <!-- Framework.E2ETesting.DummyTest -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite1 -->
 </testng-results>

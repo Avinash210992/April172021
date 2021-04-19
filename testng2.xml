@@ -5,9 +5,15 @@
   <test thread-count="5" name="Test1">
     <classes>
       <class name="Framework.E2ETesting.CheckTest"/>
+      <class name="Framework.E2ETesting.DummyTest"/>
     </classes>
   </test> <!-- Test -->
   
+   <test thread-count="5" name="Test2">
+   <packages>
+   <package name ="PackageB"/>
+   </packages>
+  </test> <!-- Test -->
   
 
   

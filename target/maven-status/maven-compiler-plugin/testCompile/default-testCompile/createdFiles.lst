@@ -1,1 +1,4 @@
+Framework\E2ETesting\CheckTest.class
+Framework\E2ETesting\DummyTest.class
+PackageB\ValidateTest.class
 Framework\E2ETesting\WorkingTest.class

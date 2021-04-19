@@ -73,8 +73,7 @@ public class WorkingTest extends BrowserSettings {
 		
 	}
 	
-	@SuppressWarnings("unchecked")
-	@Test (priority=3,groups= {"main"})
+		@Test (priority=3,groups= {"main"})
 	public void dealChocolate() throws InterruptedException
 	{
 		
