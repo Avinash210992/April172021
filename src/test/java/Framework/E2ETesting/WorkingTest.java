@@ -55,20 +55,22 @@ public class WorkingTest extends BrowserSettings {
 		hp.signInButton.sendKeys(click1);
 	windowtotal= dr.getWindowHandles();
 	al=new ArrayList<String>(windowtotal);
-	
+	Thread.sleep(10);
 		
 	}
 	@Parameters({"useremail","password"})
 	@Test(priority=2,groups= {"main"})
-	public void signIN(String user,String pass)
+	public void signIN(String user,String pass) throws InterruptedException
 	
 	{
 		dr.switchTo().window(al.get(1));
 		System.out.println(dr.getTitle());
 		SigninPage sp = new SigninPage(dr);
-		sp.email().sendKeys(user);
+		wait.until(ExpectedConditions.visibilityOf(sp.email())).sendKeys(user);
+		
 		sp.continueButton().click();
 		wait.until(ExpectedConditions.visibilityOf(sp.password)).sendKeys(pass);
+		Thread.sleep(10);
 		
 		
 	}

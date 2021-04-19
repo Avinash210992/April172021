@@ -1,4 +1,7 @@
 Framework\E2ETesting\CheckTest.class
 Framework\E2ETesting\DummyTest.class
+<<<<<<< HEAD
 PackageB\ValidateTest.class
+=======
+>>>>>>> 8d64b880684b3e87c19171ef0fc31eb6acd4443b
 Framework\E2ETesting\WorkingTest.class

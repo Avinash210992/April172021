@@ -34,6 +34,24 @@ public class DummyTest {
 	
 	
 	
+
+	@Test(groups="side")
+	public void m5()
+	{
+		System.out.println("am in m5");
+	}
 	
+	
+	@Test(groups="side")
+	public void m6()
+	{
+		System.out.println("am in m6");
+	}
+	
+	@Test(groups="side")
+	public void m7()
+	{
+		System.out.println("am in m7");
+	}
 	
 }
