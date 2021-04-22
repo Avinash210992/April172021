@@ -1,10 +1,15 @@
 package Framework.E2ETesting;
 
+import java.io.File;
+
 import java.io.FileInputStream;
 
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -37,15 +42,22 @@ System.setProperty("webdriver.chrome.driver", "D:\\Automation\\chromedriver_win3
 	urlObt=url;
 	return dr;
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	}
+	
+	public String getScreenshot(WebDriver driver, String filepath) throws IOException
+	{
+	
+		String dest = System.getProperty("user.dir")+"\\Screenshots\\"+filepath+".png";
+		TakesScreenshot tss  = ((TakesScreenshot)driver);	
+		File src = tss.getScreenshotAs(OutputType.FILE);
+		File destfile = new File(dest);
+		
+		FileUtils.copyFile(src, destfile);;
+		String destpath = destfile.getAbsolutePath();
+		return destpath;
+		
+	}
+	
+	
 
 }

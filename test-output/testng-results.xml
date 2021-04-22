@@ -1,55 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-17T23:25:00 IST" name="Suite1" finished-at="2021-04-17T23:25:20 IST" duration-ms="20258">
+  <suite started-at="2021-04-22T00:37:59 IST" name="Failed suite [Failed suite [Suite1]]" finished-at="2021-04-22T00:37:59 IST" duration-ms="78">
     <groups>
-      <group name="side">
-        <method signature="DummyTest.m2()[pri:0, instance:Framework.E2ETesting.DummyTest@52719fb6]" name="m2" class="Framework.E2ETesting.DummyTest"/>
-        <method signature="DummyTest.m3()[pri:0, instance:Framework.E2ETesting.DummyTest@52719fb6]" name="m3" class="Framework.E2ETesting.DummyTest"/>
-        <method signature="DummyTest.m4()[pri:0, instance:Framework.E2ETesting.DummyTest@52719fb6]" name="m4" class="Framework.E2ETesting.DummyTest"/>
-      </group> <!-- side -->
       <group name="main">
-        <method signature="WorkingTest.callBrowser()[pri:1, instance:Framework.E2ETesting.WorkingTest@1af2d44a]" name="callBrowser" class="Framework.E2ETesting.WorkingTest"/>
-        <method signature="WorkingTest.dealChocolate()[pri:3, instance:Framework.E2ETesting.WorkingTest@1af2d44a]" name="dealChocolate" class="Framework.E2ETesting.WorkingTest"/>
-        <method signature="WorkingTest.signIN(java.lang.String,java.lang.String)[pri:2, instance:Framework.E2ETesting.WorkingTest@1af2d44a]" name="signIN" class="Framework.E2ETesting.WorkingTest"/>
-        <method signature="DummyTest.m1()[pri:0, instance:Framework.E2ETesting.DummyTest@52719fb6]" name="m1" class="Framework.E2ETesting.DummyTest"/>
+        <method signature="WorkingTest.dealChocolate()[pri:3, instance:Framework.E2ETesting.WorkingTest@43dac38f]" name="dealChocolate" class="Framework.E2ETesting.WorkingTest"/>
       </group> <!-- main -->
     </groups>
-    <test started-at="2021-04-17T23:25:00 IST" name="Test1" finished-at="2021-04-17T23:25:20 IST" duration-ms="19867">
+    <test started-at="2021-04-22T00:37:59 IST" name="Test1(failed)(failed)" finished-at="2021-04-22T00:37:59 IST" duration-ms="78">
       <class name="Framework.E2ETesting.WorkingTest">
-        <test-method signature="callBrowser()[pri:1, instance:Framework.E2ETesting.WorkingTest@1af2d44a]" started-at="2021-04-17T23:25:00 IST" name="callBrowser" finished-at="2021-04-17T23:25:11 IST" duration-ms="11016" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- callBrowser -->
-        <test-method signature="signIN(java.lang.String,java.lang.String)[pri:2, instance:Framework.E2ETesting.WorkingTest@1af2d44a]" started-at="2021-04-17T23:25:11 IST" name="signIN" finished-at="2021-04-17T23:25:16 IST" duration-ms="5482" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[8939756308]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[8939756308]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signIN -->
-        <test-method signature="dealChocolate()[pri:3, instance:Framework.E2ETesting.WorkingTest@1af2d44a]" started-at="2021-04-17T23:25:16 IST" name="dealChocolate" finished-at="2021-04-17T23:25:20 IST" duration-ms="3278" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="dealChocolate()[pri:3, instance:Framework.E2ETesting.WorkingTest@43dac38f]" started-at="2021-04-22T00:37:59 IST" name="dealChocolate" finished-at="2021-04-22T00:37:59 IST" duration-ms="10" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.switchTo()" because "this.dr" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at Framework.E2ETesting.WorkingTest.dealChocolate(WorkingTest.java:92)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.switchTo()" because "this.dr" is null
+at Framework.E2ETesting.WorkingTest.dealChocolate(WorkingTest.java:72)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -80,31 +48,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dealChocolate -->
       </class> <!-- Framework.E2ETesting.WorkingTest -->
-    </test> <!-- Test1 -->
-    <test started-at="2021-04-17T23:25:20 IST" name="Test2" finished-at="2021-04-17T23:25:20 IST" duration-ms="21">
-      <class name="Framework.E2ETesting.DummyTest">
-        <test-method signature="m1()[pri:0, instance:Framework.E2ETesting.DummyTest@52719fb6]" started-at="2021-04-17T23:25:20 IST" name="m1" finished-at="2021-04-17T23:25:20 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- m1 -->
-        <test-method signature="m2()[pri:0, instance:Framework.E2ETesting.DummyTest@52719fb6]" started-at="2021-04-17T23:25:20 IST" name="m2" finished-at="2021-04-17T23:25:20 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- m2 -->
-        <test-method signature="m3()[pri:0, instance:Framework.E2ETesting.DummyTest@52719fb6]" started-at="2021-04-17T23:25:20 IST" name="m3" finished-at="2021-04-17T23:25:20 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- m3 -->
-        <test-method signature="m4()[pri:0, instance:Framework.E2ETesting.DummyTest@52719fb6]" started-at="2021-04-17T23:25:20 IST" name="m4" finished-at="2021-04-17T23:25:20 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- m4 -->
-      </class> <!-- Framework.E2ETesting.DummyTest -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite1 -->
+    </test> <!-- Test1(failed)(failed) -->
+  </suite> <!-- Failed suite [Failed suite [Suite1]] -->
 </testng-results>

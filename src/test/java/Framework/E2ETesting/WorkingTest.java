@@ -3,22 +3,12 @@ package Framework.E2ETesting;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
-import java.util.function.Function;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
@@ -92,12 +82,13 @@ public class WorkingTest extends BrowserSettings {
 	String text1= ep.header().getText();
 	Assert.assertTrue(text1.equals("The Electronics"));
 	
-	
-
-
-
-
-
 	}
 	
+		
+		@Test(dependsOnMethods={"dealChocolate"},groups="main")
+		public void deptest()
+		{
+			System.out.println("am dep on dealchoc");
+		}	
+		
 }

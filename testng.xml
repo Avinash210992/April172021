@@ -16,7 +16,12 @@
       <class name="Framework.E2ETesting.WorkingTest"/>
     </classes>
   </test> <!-- Test -->
-  
+  <listeners>
+<listener class-name= "Framework.E2ETesting.Listeners">
+<listener class-name="Framework.E2ETesting.AnnotationTransformer"/>
+<listener class-name="Framework.E2ETesting.Ireporter"/>
+</listener>
+</listeners>
   <test name="Test2">
   <classes>
   <class name="Framework.E2ETesting.DummyTest"/>
