@@ -20,7 +20,7 @@ String urlObt;
 	public WebDriver browser() throws IOException
 	{
 		Properties p= new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\DELL\\GitApr17admin\\src\\main\\java\\resources\\configBasics.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\DELL\\April172021\\src\\main\\java\\resources\\configBasics.properties");
 		p.load(fis);
 		String url = p.getProperty("url");
 		String browserName = p.getProperty("browser");
@@ -30,7 +30,7 @@ String urlObt;
 	if(browserName.equalsIgnoreCase("chrome"))
 	{
 
-System.setProperty("webdriver.chrome.driver", "D:\\Automation\\chromedriver_win32 (1)\\chromedriver.exe");
+System.setProperty("webdriver.chrome.driver", "D:\\Automation\\chromedriver_win32\\chromedriver.exe");
  dr = new ChromeDriver();
 	}
 	

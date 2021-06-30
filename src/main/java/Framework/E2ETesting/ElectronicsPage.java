@@ -16,7 +16,7 @@ public class ElectronicsPage {
 		PageFactory.initElements(dr, this);
 	}
 	
-	@FindBy(xpath="//div[contains(@class,'bxw-pageheader__title__text')]/h1")
+	@FindBy(xpath="//div//h1[text()='New & upcoming launches in electronics']")
 	WebElement header;
 	
 

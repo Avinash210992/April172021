@@ -9,17 +9,11 @@
     <listener class-name="Framework.E2ETesting.Ireporter"/>
   </listeners>
   <test thread-count="5" name="Test1(failed)" verbose="0">
-    <groups>
-      <run>
-        <include name="main"/>
-        <include name="side"/>
-      </run>
-    </groups>
     <classes>
       <class name="Framework.E2ETesting.WorkingTest">
         <methods>
-          <include name="dealChocolate"/>
           <include name="deptest"/>
+          <include name="electronics"/>
         </methods>
       </class> <!-- Framework.E2ETesting.WorkingTest -->
     </classes>

@@ -3,6 +3,7 @@ package Framework.E2ETesting;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 import org.openqa.selenium.Keys;
@@ -43,7 +44,7 @@ public class WorkingTest extends BrowserSettings {
 		 click1=Keys.chord(Keys.CONTROL,Keys.ENTER);
 	
 		hp.signInButton.sendKeys(click1);
-	windowtotal= dr.getWindowHandles();
+	windowtotal= new LinkedHashSet<String>(dr.getWindowHandles());
 	al=new ArrayList<String>(windowtotal);
 	Thread.sleep(10);
 		
@@ -66,17 +67,18 @@ public class WorkingTest extends BrowserSettings {
 	}
 	
 		@Test (priority=3,groups= {"main"})
-	public void dealChocolate() throws InterruptedException
+	public void electronics() throws InterruptedException
 	{
 		
 		dr.switchTo().window(al.get(0));
 		dr.manage().window().maximize();
 		Thread.sleep(5);
 		wait.until(ExpectedConditions.visibilityOf(hp.elect())).sendKeys(click1);;
+	
 		Set<String> win1 = dr.getWindowHandles();
 		win1.removeAll(windowtotal);
 		al.addAll(win1);
-	dr.switchTo().window(al.get(2));
+		dr.switchTo().window(al.get(2));
 	System.out.println(dr.getCurrentUrl());
 	ElectronicsPage ep = new ElectronicsPage(dr);
 	String text1= ep.header().getText();
@@ -85,10 +87,10 @@ public class WorkingTest extends BrowserSettings {
 	}
 	
 		
-		@Test(dependsOnMethods={"dealChocolate"},groups="main")
+		@Test(dependsOnMethods={"electronics"},groups="main")
 		public void deptest()
 		{
-			System.out.println("am dep on dealchoc");
+			System.out.println("am dependent on electonics method");
 		}	
 		
 }
